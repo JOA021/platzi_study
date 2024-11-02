@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container:hover .circle{
+            transform: translateX(200px);
+            gap: 5px;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .uno {
+            background: lightgreen;
+            transition: transform 1s linear;
+            transition-delay: 1s;
+        }
+
+        .dos {
+            background: violet;
+            transition: transform 1s ease;
+            transition-delay: 2s;
+        }
+
+        .tres {
+            background: lightblue;
+            transition: transform 2s ease-in;
+            transition-delay: 3s;
+        }
+
+        .cuatro {
+            background: fuchsia;
+            transition: transform 1s ease-out;
+            transition-delay: 4s;
+        }
+
+        .cinco {
+            background: lightcoral;
+            transition: transform 1s ease-in-out;
+            transition-delay: 5s;
+        }
+
+        .six {
+            background: lightcoral;
+            transition: transform 1s cubic-bezier(.51, .72, .91, .26);
+            transition-delay: 6s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle uno"></div>
+        <div class="circle dos"></div>
+        <div class="circle tres"></div>
+        <div class="circle cuatro"></div>
+        <div class="circle cinco"></div>
+        <div class="circle six"></div>
+    </div>
+</body>
+
+</html>

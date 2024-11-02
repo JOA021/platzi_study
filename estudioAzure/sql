@@ -1,0 +1,10 @@
+/*create TABLE usuarios ( 
+    usuario_id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    nombre varchar(50),
+    apellido varchar(50),
+    edad NUMERIC(2,0),
+    correo VARCHAR(50)
+);*/
+
+insert into usuarios(nombre,apellido, edad, correo)
+values ('jacob', 'ovalle',20,'jacobovallealvarez@gmail.com');

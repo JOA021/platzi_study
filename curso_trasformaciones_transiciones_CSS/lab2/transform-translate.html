@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shadow {
+            background: lightgray;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .circle{
+            background: rgb(0, 73, 89);
+            background: -moz-linear-gradient(90deg, rgba(0, 73, 89, 1) 0%, rgba(0, 119, 147, 1) 48%, rgba(0, 212, 255, 1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(0, 73, 89, 1) 0%, rgba(0, 119, 147, 1) 48%, rgba(0, 212, 255, 1) 100%);
+            background: linear-gradient(90deg, rgba(0, 73, 89, 1) 0%, rgba(0, 119, 147, 1) 48%, rgba(0, 212, 255, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004959", endColorstr="#00d4ff", GradientType=1);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .circle:hover{
+            /*transform: translate(20px, -20px)*/
+            transform: translateX(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shadow">
+        <div class="circle"></div>
+    </div>
+</body>
+
+</html>

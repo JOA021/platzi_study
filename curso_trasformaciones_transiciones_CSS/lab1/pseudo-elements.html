@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div::before{
+            content: ";)";
+        }
+        div::after{
+            content: ";(";
+        }
+        *:disabled {
+            margin-top: 10px;
+            background-color: dimgrey;
+            color: linen;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>Alicia</div>
+
+    <input id="empDate" name="empDate" type="date" disabled />
+</body>
+</html>

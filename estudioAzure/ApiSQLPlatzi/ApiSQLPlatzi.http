@@ -1,0 +1,6 @@
+@ApiSQLPlatzi_HostAddress = http://localhost:5206
+
+GET {{ApiSQLPlatzi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

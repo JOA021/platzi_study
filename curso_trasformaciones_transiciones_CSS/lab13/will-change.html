@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 100px;
+            height: 30px;
+            background: palegoldenrod;
+        }
+
+        .better {
+            will-change: transform;
+            transition: transform 500ms;
+        }
+
+        .better:hover {
+            transform: translateY(5px);
+        }
+
+        .worst {
+            will-change: margin-top;
+            transition: margin-top 500ms;
+        }
+
+        .worst:hover {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="better"></button>
+        <button class="worst"></button>
+    </div>
+    <p>
+
+        will-change
+        Propiedad css para anticipar y preparar los cambios
+        Este tipo de optimizaciones puede aumentar la capacidad de respuesta de una página al realizar un trabajo
+        potencialmente costoso antes de que realmente se requieran. Propiedades
+
+        </br>
+        </br>
+
+        will-change: auto; </br>
+        will-change: scroll-position;</br>
+        will-change: contents;</br>
+        will-change: transform;</br>
+        will-change: opacity;</br>
+        will-change: left, top;</br></br>
+        La propiedad "will-change" admite múltiples valores, en cuyo caso se deben separar por comas:
+    </br>
+</br>
+
+        .miele {will-change: transform, opacity, contents;}
+    </br>
+</br>
+        Recomendación
+        No aplique will-change a demasiados elementos porque puede hacer que la página se ralentice o consuma muchos
+        recursos. "will-change" está destinado a ser utilizado como último recurso, con el fin de tratar de hacer frente
+        a los problemas de rendimiento existentes. No debe usarse para anticipar problemas de desempeño.
+    </p>
+</body>
+
+</html>
